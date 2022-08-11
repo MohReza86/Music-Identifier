@@ -6,12 +6,12 @@
 from pydub import AudioSegment
 import os
 
-INPUT_PATH = '/Users/MohReza/Documents/Music/mp3' # path to input audios
-OUTPUT_PATH = '/Users/MohReza/Desktop/Python/Audio Processing for ML/TEST 2/wav songs'  # path to the converted wav audios
+INPUT_PATH = '' # path to input audios
+OUTPUT_PATH = ''  # path to the converted wav audios
 
 
 def convert_to_wav(input_path, output_path=None):
-	"""Take audio in different formats and return audio in wav format """
+	"""Take audio in different formats and return in wav format """
 
 	for audio in os.listdir(input_path):
 		if not audio.startswith('.'): # ignore hidden system files like .DS_Store
